@@ -1,0 +1,12 @@
+# Project exclude paths
+/ES/target/
+/Flink/target/
+/Hadoop/target/
+/Hbase/target/
+/JAVA/target/
+/Kafka/target/
+/Spark/target/
+/SparkTest/target/
+/Spring/Eureka/EuratorService/target/
+/target/
+/Util/target/

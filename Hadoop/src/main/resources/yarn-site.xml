@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration> 
+      <property>
+      <name>yarn.nodemanager.aux-services</name>
+      <value>mapreduce_shuffle</value>
+    </property>
+      <property>
+      <name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
+      <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+    </property>
+      <property>
+      <name>yarn.resourcemanager.hostname</name>
+      <value>hdh119</value>
+    </property>
+      <property>
+      <name>yarn.application.classpath</name>
+      <value>$HADOOP_CONF_DIR,$HADOOP_COMMON_HOME/*,$HADOOP_COMMON_HOME/lib/*,$HADOOP_HDFS_HOME/*,$HADOOP_HDFS_HOME/lib/*,$HADOOP_MAPRED_HOME/*,$HADOOP_MAPRED_HOME/lib/*,$HADOOP_YARN_HOME/*,$HADOOP_YARN_HOME/lib/*,/usr/lib/cluster001/SERVICE-HADOOP-admin/share/hadoop/common/*,/usr/lib/cluster001/SERVICE-HADOOP-admin/share/hadoop/common/lib/*,/usr/lib/cluster001/SERVICE-HADOOP-admin/share/hadoop/hdfs/*,/usr/lib/cluster001/SERVICE-HADOOP-admin/share/hadoop/hdfs/lib/*,/usr/lib/cluster001/SERVICE-HADOOP-admin/share/hadoop/mapreduce/*,/usr/lib/cluster001/SERVICE-HADOOP-admin/share/hadoop/mapreduce/lib/*,/usr/lib/cluster001/SERVICE-HADOOP-admin/share/hadoop/yarn/*,/usr/lib/cluster001/SERVICE-HADOOP-admin/share/hadoop/yarn/lib/*</value>
+    </property>
+      <property>
+      <name>yarn.nodemanager.local-dirs</name>
+      <value>/mnt/disk1/data/cluster001/SERVICE-HADOOP-admin/nm/local,/mnt/ssd1/data/cluster001/SERVICE-HADOOP-admin/nm/local,/mnt/ssd2/data/cluster001/SERVICE-HADOOP-admin/nm/local,/mnt/ssd3/data/cluster001/SERVICE-HADOOP-admin/nm/local,/mnt/ssd4/data/cluster001/SERVICE-HADOOP-admin/nm/local,/mnt/ssd5/data/cluster001/SERVICE-HADOOP-admin/nm/local,/mnt/ssd6/data/cluster001/SERVICE-HADOOP-admin/nm/local</value>
+    </property>
+      <property>
+      <name>yarn.nodemanager.log-dirs</name>
+      <value>/mnt/disk1/data/cluster001/SERVICE-HADOOP-admin/nm/userlogs</value>
+    </property>
+      <property>
+      <name>yarn.log-aggregation-enable</name>
+      <value>true</value>
+    </property>
+      <property>
+      <name>yarn.nodemanager.remote-app-log-dir</name>
+      <value>hdfs://SERVICE-HADOOP-admin/var/log/SERVICE-HADOOP-admin/yarn/apps</value>
+    </property>
+      <property>
+      <name>yarn.log.server.url</name>
+      <value>http://hdh121:10020/jobhistory/logs/</value>
+    </property>
+      <property>
+      <name>yarn.nodemanager.vmem-pmem-ratio</name>
+      <value>5</value>
+    </property>
+      <property>
+      <name>yarn.nodemanager.resource.memory-mb</name>
+      <value>204800</value>
+    </property>
+      <property>
+      <name>yarn.nodemanager.resource.cpu-vcores</name>
+      <value>128</value>
+    </property>
+      <property>
+      <name>yarn.scheduler.maximum-allocation-mb</name>
+      <value>204800</value>
+    </property>
+      <property>
+      <name>yarn.scheduler.minimum-allocation-mb</name>
+      <value>128</value>
+    </property>
+      <property>
+      <name>yarn.scheduler.increment-allocation-mb</name>
+      <value>128</value>
+    </property>
+      <property>
+      <name>yarn.scheduler.increment-allocation-vcores</name>
+      <value>1</value>
+    </property>
+      <property>
+      <name>yarn.nodemanager.pmem-check-enabled</name>
+      <value>true</value>
+    </property>
+      <property>
+      <name>yarn.nodemanager.vmem-check-enabled</name>
+      <value>true</value>
+    </property>
+      <property>
+      <name>yarn.resourcemanager.address</name>
+      <value>hdh119:18040</value>
+    </property>
+      <property>
+      <name>yarn.resourcemanager.scheduler.address</name>
+      <value>hdh119:18030</value>
+    </property>
+      <property>
+      <name>yarn.resourcemanager.admin.address</name>
+      <value>hdh119:8033</value>
+    </property>
+      <property>
+      <name>yarn.resourcemanager.resource-tracker.address</name>
+      <value>hdh119:8025</value>
+    </property>
+      <property>
+      <name>yarn.resourcemanager.ha.automatic-failover.enabled</name>
+      <value>True</value>
+    </property>
+      <property>
+      <name>yarn.scheduler.maximum-allocation-vcores</name>
+      <value>20</value>
+    </property>
+      <property>
+      <name>yarn.resourcemanager.am.max-attempts</name>
+      <value>1</value>
+    </property>
+      <property>
+      <name>yarn.resourcemanager.scheduler.class</name>
+      <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</value>
+    </property>
+      <property>
+      <name>yarn.nodemanager.recovery.enabled</name>
+      <value>true</value>
+    </property>
+      <property>
+      <name>yarn.nodemanager.recovery.dir</name>
+      <value>/mnt/disk1/data/cluster001/SERVICE-HADOOP-admin/yarn-nm-recovery</value>
+    </property>
+      <property>
+      <name>yarn.nodemanager.address</name>
+      <value>${yarn.nodemanager.hostname}:18045</value>
+    </property>
+  
+    <property>
+    <name>yarn.resourcemanager.webapp.address</name>
+    <value>hdh119:18088</value>
+  </property>
+  
+  
+    <!-- HA Setting -->
+  <property>
+    <name>yarn.resourcemanager.cluster-id</name>
+    <value>SERVICE-HADOOP-admin</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.ha.enabled</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.ha.rm-ids</name>
+    <value>hdh119,hdh120</value>
+  </property>
+  <property>
+    <name>hadoop.registry.zk.connection.timeout.ms</name>
+    <value>30000</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.zk-timeout-ms</name>
+    <value>30000</value>
+  </property>
+    <property>
+    <name>yarn.resourcemanager.hostname.hdh119</name>
+    <value>hdh119</value>
+  </property>
+    <property>
+    <name>yarn.resourcemanager.hostname.hdh120</name>
+    <value>hdh120</value>
+  </property>
+  
+        <property>
+    <name>yarn.resourcemanager.webapp.address.hdh119</name>
+    <value>hdh119:18088</value>
+  </property>
+      <property>
+    <name>yarn.resourcemanager.webapp.address.hdh120</name>
+    <value>hdh120:18088</value>
+  </property>
+      
+  
+
+     <!--HA模式下修改ResourceManager服务RPC端口，原默认端口为8032-->
+  <property>
+    <name>yarn.resourcemanager.address.hdh119</name>
+    <value>hdh119:18040</value>
+  </property>
+   
+  <!--HA模式下修改ResourceManager服务调度器端口，原默认端口为8030-->
+  <property>
+    <name>yarn.resourcemanager.scheduler.address.hdh119</name>
+    <value>hdh119:18030</value>
+  </property>
+   
+  <!--HA模式下修改ResourceManager服务管理模块RPC端口，原默认端口为8033-->
+  <property>
+    <name>yarn.resourcemanager.admin.address.hdh119</name>
+    <value>hdh119:8033</value>
+  </property>
+   
+  <!--HA模式下修改ResourceManager服务资源跟踪模块RPC端口，原默认端口为8031-->
+  <property>
+    <name>yarn.resourcemanager.resource-tracker.address.hdh119</name>
+    <value>hdh119:8025</value>
+  </property>
+     <!--HA模式下修改ResourceManager服务RPC端口，原默认端口为8032-->
+  <property>
+    <name>yarn.resourcemanager.address.hdh120</name>
+    <value>hdh120:18040</value>
+  </property>
+   
+  <!--HA模式下修改ResourceManager服务调度器端口，原默认端口为8030-->
+  <property>
+    <name>yarn.resourcemanager.scheduler.address.hdh120</name>
+    <value>hdh120:18030</value>
+  </property>
+   
+  <!--HA模式下修改ResourceManager服务管理模块RPC端口，原默认端口为8033-->
+  <property>
+    <name>yarn.resourcemanager.admin.address.hdh120</name>
+    <value>hdh120:8033</value>
+  </property>
+   
+  <!--HA模式下修改ResourceManager服务资源跟踪模块RPC端口，原默认端口为8031-->
+  <property>
+    <name>yarn.resourcemanager.resource-tracker.address.hdh120</name>
+    <value>hdh120:8025</value>
+  </property>
+     
+  <property>
+    <name>yarn.resourcemanager.recovery.enabled</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.store.class</name>
+    <value>org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.zk-address</name>
+    <value>hdh119:2181,hdh120:2181,hdh121:2181</value>
+  </property>
+  
+  <!-- liuyong18 -->
+  
+</configuration>

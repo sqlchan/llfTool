@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ES" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ES/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Flink" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Flink/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Hadoop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Hadoop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Hbase" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Hbase/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JAVA" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JAVA/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Kafka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Kafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spark" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spark/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SparkTest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SparkTest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/Eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/Eureka/EuratorService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/Eureka/EuratorService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/Eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/Eureka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
